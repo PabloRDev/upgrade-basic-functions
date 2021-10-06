@@ -65,4 +65,21 @@ function average(param) {
 
 console.log(average(numberss));
 
+// Iteracion #5
+// Crea una función que reciba por parámetro un array y cuando es un valor number lo sume y de lo contrario cuente la longitud del string y lo sume. Puedes usar este array para probar tu función:
+let mixedElements = [6, 1, "Rayo", 1, "vallecano", "10", "upgrade", 8, "hub"];
+
+function averageWord(param) {
+  let total = 0;
+  for (let index = 0; index < mixedElements.length; index++) {
+    if (typeof mixedElements[index] == "number") {
+      total += mixedElements[index];
+    } else {
+      total += mixedElements[index].length;
+    }
+  }
+  return total;
+}
+console.log(averageWord(mixedElements));
+
 
